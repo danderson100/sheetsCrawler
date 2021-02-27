@@ -10,8 +10,10 @@ WARNING: The program may crash if you have a pending invitation for someone in t
 
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
-Step 1: Make a copy of the WGU LinkedIn Network Google Sheet in your own Google Drive 
-and name it: Copy of WGU LinkedIn Network. Ensure you are logged into your Google account and have access to your Drive.
+Step 1: Make a copy of the WGU LinkedIn Network Google Sheet by clicking File -> Make a Copy. Store it in your 
+own Google Drive and name it: Copy of WGU LinkedIn Network
+
+Ensure you are logged into your Google account and have access to your Drive.
 
 Step 2: You must first create your own client_secret.json file and enable the Google Drive AND Google Sheets APIs.
 Follow the instructions here: https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html

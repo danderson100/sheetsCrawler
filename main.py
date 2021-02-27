@@ -50,6 +50,11 @@ scope = ['https://www.googlapis.com/feeds',
          'https://www.googlapis.com/auth/drive']
 
 
+# Purpose: This function uses gspread and the credentials you created in json format
+# to access the WGU LinkedIn Network Google sheet. It then retrieves all
+# URLs from that document and stores them.
+#
+# @:return values_list is the list of urls scraped from "Copy of WGU LinkedIn Network"
 def get_urls():
     # Your client_secret.json file must be in working directory
     gc = gspread.service_account(filename="client_secret.json")
@@ -64,6 +69,12 @@ def get_urls():
     return values_list
 
 
+# Purpose: This function creates a Selenium-controlled instance of Firefox, logs
+# in using the provided credentials, goes through all of the urls from
+# the WGU Google sheet, and clicks the send request button. The thread sleeps
+# for 2.5 seconds between each
+#
+# @:parameter urls is the list of urls scraped from "Copy of WGU LinkedIn Network"
 def open_browser(urls):
     browser = webdriver.Firefox()
     browser.get('https://www.linkedin.com/')
@@ -78,14 +89,22 @@ def open_browser(urls):
     for url in urls:
         if url.startswith('https'):
             browser.get(url)
-            browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+            distance = browser.find_element_by_class_name("dist-value")
+
+            if distance.text == "3rd":
+                # do third connection stuff
+                browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
+                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+            else:
+                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+
             browser.find_element_by_class_name("ml1").click()
             time.sleep(2.5)
+
+    browser.close()
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     list_of_urls = get_urls()
     open_browser(list_of_urls)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

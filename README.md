@@ -6,6 +6,8 @@ Purpose: This program is for WGU students. It uses Google Sheets API and Seleniu
 pull all LinkedIn addresses from the WGU LinkedIn Network and controls a remote browser to
 send requests to everyone on the list.
 
+WARNING: The program may crash if you have a pending invitation for someone in the list.
+
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
 Step 1: Make a copy of the WGU LinkedIn Network Google Sheet in your own Google Drive 

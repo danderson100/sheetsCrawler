@@ -31,8 +31,10 @@ How to add geckodriver to PATH (Ubuntu/Linux):
 
     4.) Add the driver to your PATH: sudo mv geckodriver /usr/local/bin/
 
+
 Step 4: Go into the below code and enter your LinkedIn username and password where needed.
 This will allow Selenium to login and add people to your network.
+
 ------------------------------------------------------------------------------------------------------------------------
 USAGE INSTRUCTIONS:
 

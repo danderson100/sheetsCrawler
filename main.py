@@ -95,6 +95,8 @@ def open_browser(urls):
                 # do third connection stuff
                 browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+            elif distance.text == "1st":
+                continue  # We have already added that person, so skip this iteration
             else:
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
 

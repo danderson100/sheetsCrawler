@@ -7,6 +7,8 @@ pull all LinkedIn addresses from the WGU LinkedIn Network Google sheet and contr
 send requests to everyone on the list. This program may encounter problems if you are not at least a third connection
 from the people in the list. So you may want to manually add one or two users before running it.
 
+WARNING: The program may crash if you have a pending invitation to connect with someone.
+
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
 Step 1: Make a copy of the WGU LinkedIn Network Google Sheet: https://docs.google.com/spreadsheets/d/12HtPG9IdXnagrXGu9OGpSAOEcdc6GvG9vXjOT0aTbxU/edit?usp=sharing 

@@ -27,7 +27,7 @@ def get_urls():
     return values_list
 
 
-# Purpose: This function creates a Selenium-controlled instance of Firefox, logs
+# Purpose: This function creates a Selenium-controlled instance of Chrome, logs
 # in using the provided credentials, goes through all of the urls from
 # the WGU Google sheet, and clicks the send request button. The thread sleeps
 # for 2.5 seconds between each

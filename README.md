@@ -28,7 +28,7 @@ Follow these instructions:
     9.) SHARE the Copy of WGU LinkedIn Network sheet with that email address and give editor privileges.
 
 
-NOTE: Make sure your client_secret.json file is in your working directory.
+NOTE: Make sure your client_secret.json file is in your working directory. If still stuck, more info can be found here: https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
 
 Step 3: Install gspread: Open terminal, navigate to directory.
 
@@ -36,7 +36,7 @@ Step 3: Install gspread: Open terminal, navigate to directory.
     
     NOTE: You may have to use this instead: pip install gspread
 
-Step 4: Install Selenium for Python.
+Step 4: Install Selenium for Python. If below doesn't work, more info can be found here: https://selenium-python.readthedocs.io/installation.html
  
     pip3 install -U selenium
     

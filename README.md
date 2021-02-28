@@ -32,15 +32,15 @@ NOTE: Make sure your client_secret.json file is in your working directory. If st
 
 Step 3: Install gspread: Open terminal, navigate to directory.
 
-    pip3 install gspread
+    pip install gspread
     
-    NOTE: You may have to use this instead: pip install gspread
+    NOTE: You may have to use this instead: pip3 install gspread
 
 Step 4: Install Selenium for Python. If below doesn't work, more info can be found here: https://selenium-python.readthedocs.io/installation.html
  
-    pip3 install -U selenium
+    pip install -U selenium
     
-    NOTE: You may have to use this instead: pip install -U selenium
+    NOTE: You may have to use this instead: pip3 install -U selenium
 
 Step 5: Get the Google Chrome chromedriver and install it.  Select the correct driver for your version
 of chrome. If you are up-to-date it's likely either 88 or 89. Download page: https://chromedriver.chromium.org/downloads

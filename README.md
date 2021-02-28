@@ -55,7 +55,7 @@ How to add chromedriver to PATH (Ubuntu/Linux) Should work with MacOS but you ma
 
     2.) Extract the file with: tar -xvzf chromedriver*
 
-    3.) Find the file names 'chromedriver' and make it executable: chmod +x chromedriver
+    3.) Find the file named 'chromedriver' and make it executable: chmod +x chromedriver
 
     4.) Add the driver to your PATH: sudo mv chromedriver /usr/local/bin/
 

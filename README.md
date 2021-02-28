@@ -8,8 +8,6 @@ send requests to everyone on the list. This program may encounter problems if yo
 from the people in the list. So you may want to manually add one or two users before running it. The code should take about 
 10-15 minutes to add everyone (~165 invites), so you may need to ensure your monitor doesn't sleep.
 
-WARNING: The program may crash if you have a pending invitation to connect with someone on the WGU LinkedIn list.
-
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
 Step 1: Make a copy of the WGU LinkedIn Network Google Sheet: https://docs.google.com/spreadsheets/d/12HtPG9IdXnagrXGu9OGpSAOEcdc6GvG9vXjOT0aTbxU/edit?usp=sharing 

@@ -1,9 +1,8 @@
 import gspread
 import time
-
 import selenium
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, ElementNotInteractableException
 
 scope = ['https://www.googlapis.com/feeds',
          'https://www.googlapis.com/auth/spreadsheets',
@@ -44,17 +43,17 @@ def open_browser(urls):
 
     username.send_keys("your_username_here")  # Your LinkedIn username goes here
     password.send_keys("your_password_here")  # Your LinkedIn password goes here
-    
+
     time.sleep(1)
     browser.find_element_by_class_name("sign-in-form__submit-button").click()
     time.sleep(1)
+
     for url in urls:
-        if url.startswith('http'):
-            browser.get(url)
-            try:
-                distance = browser.find_element_by_class_name("dist-value")
-            except NoSuchElementException:
-                continue
+        try:
+            if url.startswith('http'):
+                browser.get(url)
+
+            distance = browser.find_element_by_class_name("dist-value")
 
             if distance.text == "2nd":
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
@@ -64,11 +63,16 @@ def open_browser(urls):
                 browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
                 time.sleep(1)
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+
             else:
                 continue  # We have already added that person, or unable to add, so skip this iteration
 
             browser.find_element_by_class_name("ml1").click()
-            time.sleep(2.5)
+
+        except NoSuchElementException or ElementNotInteractableException:
+            continue
+
+        time.sleep(2.5)
 
     browser.close()
 

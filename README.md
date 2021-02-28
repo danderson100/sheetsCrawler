@@ -45,7 +45,7 @@ Step 4: Install Selenium for Python. If below doesn't work, more info can be fou
 Step 5: Get the Google Chrome chromedriver and install it.  Select the correct driver for your version
 of chrome. If you are up-to-date it's likely either 88 or 89. Download page: https://chromedriver.chromium.org/downloads
 
-Add it to your PATH (e.g. usr/loca/bin/ or usr/bin/). Make sure you have Google Chrome installed. 
+Add it to your PATH (e.g. usr/local/bin/ or usr/bin/). Make sure you have Google Chrome installed. 
 
 NOTE: You can type echo $PATH in terminal to show your path directories.
 

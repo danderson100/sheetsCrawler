@@ -5,7 +5,8 @@ File: main.py
 Purpose: This program is for WGU students. It uses Google Sheets API and Selenium Driver to
 pull all LinkedIn addresses from the WGU LinkedIn Network Google sheet and controls a remote browser to
 send requests to everyone on the list. This program may encounter problems if you are not at least a third connection
-from the people in the list. So you may want to manually add one or two users before running it.
+from the people in the list. So you may want to manually add one or two users before running it. The code should take about 
+10-15 minutes to add everyone (~165 invites), so you may need to ensure your monitor doesn't sleep.
 
 WARNING: The program may crash if you have a pending invitation to connect with someone on the WGU LinkedIn list.
 

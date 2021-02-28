@@ -9,8 +9,8 @@ from the people in the list. So you may want to manually add one or two users be
 
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
-Step 1: Make a copy of the WGU LinkedIn Network Google Sheet by clicking File -> Make a Copy. Store it in your 
-own Google Drive and name it: Copy of WGU LinkedIn Network
+Step 1: Make a copy of the WGU LinkedIn Network Google Sheet by clicking File -> Make a Copy. You can find the Google
+sheet by going into the WGU-IT Slack channel and typing !linkedin. Store it in your own Google Drive and name it: Copy of WGU LinkedIn Network
 
 Ensure you are logged into your Google account and have access to your Drive.
 

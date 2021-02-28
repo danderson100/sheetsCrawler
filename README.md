@@ -24,7 +24,8 @@ Follow these instructions:
     5.) Name the service account and grant it a Project Role of Editor.
     6.) Download the JSON file.
     7.) Copy the JSON file to your code directory and rename it to client_secret.json
-    8.) Open your client_secret.json file. You will see an email address. SHARE the Copy of WGU LinkedIn Network sheet with that email and give editor privileges.
+    8.) Open your client_secret.json file. You will see an email address. 
+    9.) SHARE the Copy of WGU LinkedIn Network sheet with that email address and give editor privileges.
 
 
 NOTE: Make sure your client_secret.json file is in your working directory.

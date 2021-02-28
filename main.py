@@ -1,6 +1,9 @@
 import gspread
 import time
+
+import selenium
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 
 scope = ['https://www.googlapis.com/feeds',
          'https://www.googlapis.com/auth/spreadsheets',
@@ -41,13 +44,17 @@ def open_browser(urls):
 
     username.send_keys("your_username_here")  # Your LinkedIn username goes here
     password.send_keys("your_password_here")  # Your LinkedIn password goes here
-
+    
+    time.sleep(1)
     browser.find_element_by_class_name("sign-in-form__submit-button").click()
-
+    time.sleep(1)
     for url in urls:
-        if url.startswith('https'):
+        if url.startswith('http'):
             browser.get(url)
-            distance = browser.find_element_by_class_name("dist-value")
+            try:
+                distance = browser.find_element_by_class_name("dist-value")
+            except NoSuchElementException:
+                continue
 
             if distance.text == "2nd":
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()

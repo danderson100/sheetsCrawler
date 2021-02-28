@@ -45,15 +45,18 @@ of chrome. If you are up-to-date it's likely either 88 or 89. Download page: htt
 
 Add it to your PATH. Make sure you have Google Chrome installed. 
 
-How to add chromedriver to PATH (Ubuntu/Linux):
+NOTE: You can type echo $PATH in terminal to show your path directories.
 
-    1.) Open terminal and download it with the following command: wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+How to add chromedriver to PATH (Ubuntu/Linux) Should work with MacOS but you may have a different PATH:
 
-    2.) Extract the file with: tar -xvzf geckodriver*
+    1.) Download it here if you haven't already: https://chromedriver.chromium.org/downloads
+
+    2.) Extract the file with: tar -xvzf chromedriver*
 
     3.) Find the file names 'chromedriver' and make it executable: chmod +x chromedriver
 
     4.) Add the driver to your PATH: sudo mv chromedriver /usr/local/bin/
+
 
 
 Step 6: Go into the main.py code and enter your LinkedIn username and password where needed.

@@ -56,6 +56,7 @@ def open_browser(urls):
             else:
                 # do third or no connection stuff
                 browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
+                time.sleep(1)
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
 
             browser.find_element_by_class_name("ml1").click()

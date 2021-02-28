@@ -34,7 +34,7 @@ def get_urls():
 #
 # @:parameter urls is the list of urls scraped from "Copy of WGU LinkedIn Network"
 def open_browser(urls):
-    browser = webdriver.Firefox()
+    browser = webdriver.Chrome()
     browser.get('https://www.linkedin.com/')
     username = browser.find_element_by_id("session_key")
     password = browser.find_element_by_id("session_password")
@@ -49,13 +49,13 @@ def open_browser(urls):
             browser.get(url)
             distance = browser.find_element_by_class_name("dist-value")
 
-            if distance.text == "3rd":
-                # do third connection stuff
-                browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
-                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
-            elif distance.text == "1st":
+            if distance.text == "1st":
                 continue  # We have already added that person, so skip this iteration
+            elif distance.text == "2nd":
+                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
             else:
+                # do third or no connection stuff
+                browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
                 browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
 
             browser.find_element_by_class_name("ml1").click()

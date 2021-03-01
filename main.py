@@ -53,21 +53,21 @@ def open_browser(urls):
             if url.startswith('http'):
                 browser.get(url)
 
-            distance = browser.find_element_by_class_name("dist-value")
+                distance = browser.find_element_by_class_name("dist-value")
 
-            if distance.text == "2nd":
-                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+                if distance.text == "2nd":
+                    browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
 
-            elif distance.text == "3rd":
-                # do third or no connection stuff
-                browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
-                time.sleep(1)
-                browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
+                elif distance.text == "3rd":
+                    # do third or no connection stuff
+                    browser.find_element_by_class_name("pv-s-profile-actions__overflow-toggle").click()
+                    time.sleep(1)
+                    browser.find_element_by_class_name("pv-s-profile-actions--connect").click()
 
-            else:
-                continue  # We have already added that person, or unable to add, so skip this iteration
+                else:
+                    continue  # We have already added that person, or unable to add, so skip this iteration
 
-            browser.find_element_by_class_name("ml1").click()
+                browser.find_element_by_class_name("ml1").click()
 
         except NoSuchElementException or ElementNotInteractableException:
             continue

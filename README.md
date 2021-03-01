@@ -10,6 +10,8 @@ from the people in the list. So you may want to manually add one or two users be
 
 SETUP INSTRUCTIONS:
 ------------------------------------------------------------------------------------------------------------------------
+NOTE: I used an Ubuntu VM while setting this up myself, so I'd recommend something similar. However, most commands/info should work with MacOS, too. Windows you may have to do a little more digging on your own.
+
 Step 1: Make a copy of the WGU LinkedIn Network Google Sheet: https://docs.google.com/spreadsheets/d/12HtPG9IdXnagrXGu9OGpSAOEcdc6GvG9vXjOT0aTbxU/edit?usp=sharing 
 
 Click File -> Make a Copy. You can find the Google sheet by clicking above or going into the WGU-IT Slack channel and typing !linkedin. 

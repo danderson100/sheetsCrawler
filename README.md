@@ -36,7 +36,7 @@ Follow these instructions:
 
 NOTE: Make sure your client_secret.json file is in your working directory. If still stuck, more info can be found here: https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
 
-Step 3: Install gspread: Open terminal, navigate to directory.
+Step 3: Create your own Python project with a file named main.py. Install gspread: Open terminal, navigate to directory.
 
     pip install gspread
     
@@ -67,7 +67,7 @@ How to add chromedriver to PATH (Ubuntu/Linux) Should work with MacOS but you ma
 
 
 
-Step 6: Go into the main.py code and enter your LinkedIn username and password where needed.
+Step 6: Copy the main.py code into your own project. Go into the main.py code and enter your LinkedIn username and password where needed.
 This will allow Selenium to login and add people to your network.
 
 ------------------------------------------------------------------------------------------------------------------------

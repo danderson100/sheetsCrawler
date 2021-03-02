@@ -26,7 +26,7 @@ Follow these instructions:
     1.) Go to the Google APIs Console: https://console.developers.google.com/
     2.) Create a new project.
     3.) Click Enable API. Search for and enable the Google Drive API and the Google Sheets API.
-    4.) Create credentials for a Web Server to access Application Data.
+    4.) Click Create credentials -> "Help me choose" -> Google Sheets API -> Web server -> Application data -> No, not using them.
     5.) Name the service account and grant it a Project Role of Editor.
     6.) Download the JSON file.
     7.) Copy the JSON file to your code directory and rename it to client_secret.json
